@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <h1>🔍 Prediction Result</h1>
+
+        <div class="result-box {% if 'Spam' in prediction %}spam{% else %}ham{% endif %}">
+            {{ prediction }}
+        </div>
+
+        <a href="/" class="back-btn">🔙 Try Another</a>
+    </div>
+</div>
+
+</body>
+</html>

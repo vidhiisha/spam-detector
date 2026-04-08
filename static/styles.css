@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #667eea, #764ba2, #6dd5ed, #2193b0);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Wrapper */
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Glassmorphism card */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 420px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+.card h1 {
+    margin-bottom: 10px;
+}
+
+/* Text */
+.card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #ff7a18;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ff5722;
+}
+
+/* Result box */
+.result-box {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Spam result */
+.spam {
+    background: rgba(255, 0, 0, 0.2);
+    border: 1px solid red;
+}
+
+/* Not spam */
+.ham {
+    background: rgba(0, 255, 0, 0.2);
+    border: 1px solid lime;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

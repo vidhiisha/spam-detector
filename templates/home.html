@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <h1>📩 AI Spam Detector</h1>
+        <p>Smartly detect spam messages using Machine Learning</p>
+
+        <form action="/predict" method="post">
+            <textarea name="message" placeholder="Type your message here..."></textarea>
+            <button type="submit">🚀 Analyze Message</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
